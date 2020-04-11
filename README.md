@@ -1,2 +1,6 @@
 # onlinestoreapp
-app for my online store
+this app is to developed by pavan kishore
+
+this App is to manage online store
+
+Automation done using python
