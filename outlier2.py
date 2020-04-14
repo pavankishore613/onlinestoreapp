@@ -7,8 +7,8 @@ from sklearn.neighbors import LocalOutlierFactor
 
 data = pd.read_csv("creditcard.csv")
 # sampling random 50000 points
-data_50000 = data.sample(n = 50000)
-data_50000.to_csv("NewCreditCard.csv")
+data_500 = data.sample(n = 50000)
+data_500.to_csv("NewCreditCard.csv")
 newData = pd.read_csv("NewCreditCard.csv")
 FinalData = newData.drop("Unnamed: 0", axis = 1)
 lof = LocalOutlierFactor(n_neighbors=2, algorithm='auto', metric='minkowski', p=2, metric_params=None, contamination=0.5, n_jobs=1)
